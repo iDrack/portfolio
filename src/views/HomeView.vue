@@ -1,9 +1,7 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Bio from '@/components/Bio.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  
 </template>
