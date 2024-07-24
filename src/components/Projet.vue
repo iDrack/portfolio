@@ -14,10 +14,6 @@ const props = defineProps({
 function getImageUrl() {
   return new URL(`../assets/img/${props.imgPath}`, import.meta.url)
 }
-
-console.log(props.imgPath);
-console.log(getImageUrl());
-
 </script>
 
 <template>

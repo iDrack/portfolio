@@ -4,6 +4,7 @@ import Bio from '@/components/Bio.vue';
 import Social from './components/Social.vue';
 import Projet from './components/Projet.vue';
 import { ref } from 'vue';
+import Competences from './components/Competences.vue';
 
 const projets = ref([])
 
@@ -35,6 +36,14 @@ console.log(projets.value.length);
       <div class="md:container md:mx-auto sm:px-10 flex justify-center items-center text-slate-200">
         <Bio />
       </div>
+      <div class="md:container md:mx-auto sm:px-10 items-center justify-center">
+        <Competences />
+      </div>
+      <div class="text-center text-slate-200 pt-12 pb-16 flex flex-row justify-center items-center">
+          <i class="fa fa-arrow-down fa-2x"></i>
+          <div class="font-bold text-2xl px-16">Voici quelque projets</div>
+          <i class="fa fa-arrow-down fa-2x"></i>
+        </div>
       <div>
         <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 flex justify-center items-center">
          <Projet :titre="item.titre" :description="item.description" :description2="item.description2" :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true"/>
