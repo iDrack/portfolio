@@ -10,8 +10,8 @@ const handleClick = () => {
       <div class="flex justify-center items-center">
         <img src="../assets/img/pfp_pro.png" alt="avatar" class="object-top h-[175px] w-[175px] !rounded-full" />
       </div>
-      <h1 class="text-center font-bold text-2xl py-6"> Bonjour 👋 je suis Thomas Dignoire </h1>
-      <h1 class="text-center font-bold text-5xl pb-4">
+      <h1 class="text-center font-bold py-6 text-2xl"> Bonjour 👋 je suis Thomas Dignoire </h1>
+      <h1 class="text-center font-bold md:text-5xl text-3xl pb-4 ">
         <span
           class="animate-text-shimmer bg-clip-text text-transparent bg-[linear-gradient(110deg,#e2e8f0,45%,#1e293b,55%,#e2e8f0)] bg-[length:250%_100%]">Concepteur
           Développeur d'Applications</span>

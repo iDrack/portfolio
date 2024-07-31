@@ -86,7 +86,7 @@ projets.value.push({
       </div>
       <div class="text-center text-slate-200 pt-8 pb-16 flex flex-row justify-center items-center">
         <i class="fa fa-arrow-down fa-2x"></i>
-        <div class="font-bold text-2xl px-16">Voici quelques projets</div>
+        <div class="font-bold text-xl px-4 md:px-16 md:text-2xl">Voici quelques projets</div>
         <i class="fa fa-arrow-down fa-2x"></i>
       </div>
       <div>
@@ -95,9 +95,9 @@ projets.value.push({
             :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true" />
         </div>
 
-        <div class="text-3xl font-bold text-center text-slate-200">
+        <div class="md:text-3xl text-2xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
-            Et bien d'autres ! Pourquoi ne pas aller faire un tour sur mon <a href="https://gitlab.com/iDrack"
+            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://gitlab.com/iDrack"
               class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
                 class="relative">GitLab</span></a> 👀 ?
           </p>

@@ -8,11 +8,11 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div class="text-4xl font-bold text-center text-slate-200">  
+  <div class="md:text-4xl text-3xl font-bold text-center text-slate-200">  
     <p class="py-14">
       Vous recrutez ? Mon profil vous plaît ?
     </p>
-    <a href="mailto:tdignoire@pm.me" class="group text-5xl text-blue-400 transition ease-in-out duration-200">N'hésitez pas <span aria-hidden="true" class="inline-block translate-x-0 group-hover:translate-x-3 transition-transform ease-in-out duration-200">📨</span></a>
+    <a href="mailto:tdignoire@pm.me" class="group md:text-5xl text-4xl text-blue-400 transition ease-in-out duration-200">N'hésitez pas <span aria-hidden="true" class="inline-block translate-x-0 group-hover:translate-x-3 transition-transform ease-in-out duration-200">📨</span></a>
   </div>
   <div class="flex gap-4 justify-center items-center pt-16 pb-24">
     <div>

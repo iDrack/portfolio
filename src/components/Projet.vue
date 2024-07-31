@@ -19,7 +19,7 @@ function getImageUrl() {
 <template>
   <div class="text-slate-200">
     <h1 class="font-bold text-4xl">{{ props.titre }}</h1>
-    <div class="flex item-center grow justify-evenly">
+    <div class="flex flex-wrap item-center grow justify-evenly">
       <div class="pr-4 text-xl">
         <p class="py-4 pl-4"> {{ props.description }}</p>
         <p class="pl-4"> {{ props.description2 }}</p>
@@ -35,7 +35,7 @@ function getImageUrl() {
           </ul>
         </div>
       </div>
-      <div class="">
+      <div class="pt-3 md:pt-0">
         <a :href="props.lien" v-if="imgPath">
           <img :src="getImageUrl()" :alt="props.titre" class="!rounded-3xl">
         </a>
