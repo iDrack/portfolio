@@ -8,7 +8,7 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div class="md:text-4xl text-3xl font-bold text-center text-slate-200">  
+  <div class="md:text-4xl text-lg font-bold text-center text-slate-200">  
     <p class="py-14">
       Vous recrutez ? Mon profil vous plaît ?
     </p>

@@ -2,10 +2,18 @@
 import withMT from "@material-tailwind/html/utils/withMT";
 
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{html,js,vue}",
+  ],
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: true,
   theme: {
+    screens: {
+      'lg': '1440px',
+      'md': '960px',
+      'sm': '576px',
+    },
     fontFamily: {
       sans: ['"inter"', "sans-serif"],
     },

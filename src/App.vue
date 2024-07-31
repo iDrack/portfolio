@@ -5,6 +5,7 @@ import Social from './components/Social.vue';
 import Projet from './components/Projet.vue';
 import { ref } from 'vue';
 import Competences from './components/Competences.vue';
+import 'flowbite/dist/flowbite.js'
 
 const projets = ref([])
 
@@ -24,7 +25,7 @@ projets.value.push({
   titre: "Le Bar'App",
   description: "Application web de gestion de commandes de bar à cocktails. Réalisée dans le cadre de l'examen de première année du bachelor CDA de ForEach Academy. Le projet devait être réalisé en moins de 4 jours. L'application a un design mobile first avec un accès client et un accès barman.",
   description2: "Le projet avait pour contraintes: les langages Java, SpringBoot, Typescript, Vue et MySQL, maquettes du projet sous Figma, MCD du back-end, création d'un dockefile pour le fornt-end et un autre pour le back-end ainsi qu'une démonstration devant un jurie.",
-  imgPath: "barapp.png", lien: "https://gitlab.com/barapp",
+  imgPath: "barapp2.png", lien: "https://gitlab.com/barapp",
   liensExtras: [
     "https://gitlab.com/barapp"
   ]
@@ -32,7 +33,7 @@ projets.value.push({
 
 projets.value.push({
   titre: "Youtube to MP3",
-  description: "Petite API REST en Node.js et Extress permettant de télécharger des vidéos Youtube et de les convertir en fichier mp3. L'API utilise un script bash pour télécharger un convertir les vidéos, ce script utilise youtube-dl plus et ffmpeg.",
+  description: "Petite API REST en Node.js et Express permettant de télécharger des vidéos Youtube et de les convertir en fichier mp3. L'API utilise un script bash pour télécharger un convertir les vidéos, ce script utilise youtube-dl plus et ffmpeg.",
   description2: "Ce projet m'a servi d'introduction au framework Express et à l'envirronement Node.js.",
   imgPath: "", lien: "https://gitlab.com/script_dump/youtube_to_mp3",
   liensExtras: [
@@ -85,17 +86,17 @@ projets.value.push({
         <Competences />
       </div>
       <div class="text-center text-slate-200 pt-8 pb-16 flex flex-row justify-center items-center">
-        <i class="fa fa-arrow-down fa-2x"></i>
-        <div class="font-bold text-xl px-4 md:px-16 md:text-2xl">Voici quelques projets</div>
-        <i class="fa fa-arrow-down fa-2x"></i>
+        <i class="fa fa-arrow-down fa-sm"></i>
+        <div class="font-bold md:px-16 px-4 md:text-2xl text-lg">Voici quelques projets</div>
+        <i class="fa fa-arrow-down fa-sm"></i>
       </div>
       <div>
-        <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 flex justify-center items-center">
+        <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 justify-center items-center">
           <Projet class="pb-8" :titre="item.titre" :description="item.description" :description2="item.description2"
             :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true" />
         </div>
 
-        <div class="md:text-3xl text-2xl font-bold text-center text-slate-200">
+        <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
             Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://gitlab.com/iDrack"
               class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
@@ -104,7 +105,7 @@ projets.value.push({
         </div>
 
       </div>
-      <footer class="pb-52">
+      <footer class="pb-52 md:pt-0 pt-52">
         <Social />
       </footer>
     </div>

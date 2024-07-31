@@ -21,38 +21,35 @@ const getImageUrl = (logo) => {
 
 <template>
   <div class="text-slate-200 pb-6 grid grid-cols-2 gap-4">
-    <div class="lg:pl-20 sm:pl-1">
-      <h1 class="text-2xl font-bold pt-12 pb-2">Compétences</h1>
-      <ul class="lg:text-xl sm:text-lg ml-2 font-bold ">
+    <div class="md:pl-20 pl-1">
+      <h1 class="md:text-2xl text-lg font-bold pt-12 pb-2">Compétences</h1>
+      <ul class="md:text-xl text-sm ml-2 font-bold ">
         <li class="pt-2" v-for="item in competences">
           {{ item.name }}
         </li>
       </ul>
     </div>
-    <div class="lg:pr-20 sm:pr-1 sm:pl-14">
-      <h1 class="text-2xl  font-bold pt-12 pb-2">Formation</h1>
-      <ul class="lg:text-xl sm:text-lg ml-2">
+    <div class="md:pr-20 pr-1 sm:pl-14">
+      <h1 class="md:text-2xl text-lg font-bold pt-12 pb-2">Formation</h1>
+      <ul class="md:text-xl text-sm ml-2">
         <li>
           <h1 class="font-bold">ForEach Academy</h1>
-          <div class="text-slate-300"> Bacehelor Convepteur Développeur d'Applications (CDA)</div>
-          <div class="font-bold text-slate-300 text-sm"> Sept 2023 - Juillet 2025</div>
+          <div class="text-slate-300"> Bacehelor Concepteur Développeur d'Applications (CDA)</div>
+          <div class="font-bold text-slate-300 md:text-sm text-xs"> Sept 2023 - Juillet 2025</div>
         </li>
         <li class="pt-2">
           <h1 class="font-bold">FAC des sciences Jean-Perrin</h1>
           <div class="text-slate-300"> 3éme année de Licence en Informatique</div>
-          <div class="font-bold text-slate-300 text-sm">Sept 2020 - Juillet 2021</div>
+          <div class="font-bold text-slate-300 md:text-sm text-xs">Sept 2020 - Juillet 2021</div>
         </li>
         <li class="pt-2">
           <h1 class="font-bold">IUT de Lens</h1>
-          <div class="text-slate-300"> Diplôme Universitaure de Technologie en Informatique</div>
-          <div class="font-bold text-slate-300 text-sm">Sept 2018 - Juillet 2020</div>
+          <div class="text-slate-300"> Diplôme Universitaire de Technologie en Informatique</div>
+          <div class="font-bold text-slate-300 md:text-sm text-xs">Sept 2018 - Juillet 2020</div>
         </li>
       </ul>
     </div>
   </div>
-  <div class="text-slate-200 flex flex-wrap place-content-start">
-      <h1 class="font-semibold text-xl pb-2">Langages, frameworks et outils</h1>
-    </div>
     <div id="skills" class="flex flex-wrap animate-shimmer bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-[length:400%_100%] rounded-lg shrink">
       <div
         class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
