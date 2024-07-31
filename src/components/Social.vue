@@ -49,7 +49,7 @@ const handleClick = () => {
   </div>
 
 <div data-popover id="popover-click" role="tooltip" class="absolute z-10 invisible inline-block w-72 text-sm transition-opacity duration-300 border rounded-lg shadow-sm opacity-0 text-gray-400 border-gray-600 bg-gray-800">
-    <div class="px-3 py-2">
+    <div class="px-3 py-2 text-center">
         <p>E-mail copié dans le press-papier !</p>
     </div>
     <div data-popper-arrow></div>
