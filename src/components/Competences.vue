@@ -11,13 +11,46 @@ const master = ref([{ name: "html" }, { name: "css" }, { name: "bootstrap" }, { 
                     { name: "vscode"}, { name: "intellij" }, { name: "webstorm" }, { name: "eclipse" },
                     { name: "figma" }, { name: "dbeaver" }, { name: "filezilla" },{ name: "postman" },])
 
+const competences = ref([{name : "Conception d'applications en couche"}, {name: "Développement d'API REST"}, {name: "Développement s'applications web et mobile"}, {name: "CI/CD et DevOps"}, {name: "Méthodologie Agile"}, {name: "Clean code"}])
+
 const getImageUrl = (logo) => {
   return new URL(`../assets/img/logos/${logo}.svg`, import.meta.url)
 }
+
 </script>
 
 <template>
-  <h1 class="text-2xl text-slate-200 font-bold pt-14 pb-10">Compétences</h1>
+  <div class="text-slate-200 pb-6 flex flex-auto">
+    <div class="pl-20">
+      <h1 class="text-2xl  font-bold pt-12 pb-2">Compétences</h1>
+      <ul class="text-xl ml-2">
+        <li class="pt-2" v-for="item in competences">
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+    <div class="grow"></div>
+    <div class="pr-20">
+      <h1 class="text-2xl  font-bold pt-12 pb-2">Formation</h1>
+      <ul class="text-xl ml-2">
+        <li>
+          <h1 class="font-bold">ForEach Academy</h1>
+          <div class="text-slate-300"> Bacehelor Convepteur Développeur d'Applications (CDA)</div>
+          <div class="font-bold text-slate-300 text-sm"> Sept 2023 - Juillet 2025</div>
+        </li>
+        <li class="pt-2">
+          <h1 class="font-bold">FAC des sciences Jean-Perrin</h1>
+          <div class="text-slate-300"> 3éme année de Licence en Informatique</div>
+          <div class="font-bold text-slate-300 text-sm">Sept 2020 - Juillet 2021</div>
+        </li>
+        <li class="pt-2">
+          <h1 class="font-bold">IUT de Lens</h1>
+          <div class="text-slate-300"> Diplôme Universitaure de Technologie en Informatique</div>
+          <div class="font-bold text-slate-300 text-sm">Sept 2018 - Juillet 2020</div>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="text-slate-200 flex flex-wrap place-content-start">
       <h1 class="font-semibold text-xl pb-2">Langages, frameworks et outils</h1>
     </div>

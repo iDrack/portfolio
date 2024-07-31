@@ -33,5 +33,5 @@ export default {
       "infinite-scroll": "infinite-scroll 35s linear infinite",
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

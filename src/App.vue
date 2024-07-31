@@ -8,22 +8,67 @@ import Competences from './components/Competences.vue';
 
 const projets = ref([])
 
-projets.value.push({ titre: "La bonne Franquette", 
+projets.value.push({
+  titre: "La bonne Franquette",
   description: "La bonne Franquette est une solution de gestion de commandes destinée aux petits restaurateurs. Elle se démarque par sa facilité de mise en place ne nécessitant pas de système informatique spécialisé.",
-  description2: "Application réaisée dans le cadre de mon bachelor à ForEach Academy. Ce projet m\'a permit de mettre en oeuvre ce que j\'ai vu au cours de ce même bachelor, notement: la conception d\'applications en couche, le développemet mobile multi-plateforme, le développement d\'API REST, les principes DevOps.", 
-  imgPath: "lbf.png", lien: "https://franfran62.github.io/la-bonne-franquette-website/", 
+  description2: "Application réaisée dans le cadre de mon bachelor à ForEach Academy. Ce projet m\'a permit de mettre en oeuvre ce que j\'ai vu au cours de ce même bachelor, notement: la conception d\'applications en couche, le développemet mobile multi-plateforme, le développement d\'API REST, les principes DevOps.",
+  imgPath: "lbf.png", lien: "https://franfran62.github.io/la-bonne-franquette-website/",
   liensExtras: [
     "https://github.com/Franfran62/la-bonne-franquette-appli",
     "https://github.com/iDrack/la-bonne-franquette-back",
-  ]})
-//projets.value.push({ titre: "", description: "", description2: "", imgPath: "", lien: "", lienExtras: []})
+    "https://franfran62.github.io/la-bonne-franquette-website/",
+  ]
+})
 
-projets.value.forEach(element => {
-  console.log(element.titre);
-});
+projets.value.push({
+  titre: "Le Bar'App",
+  description: "Application web de gestion de commandes de bar à cocktails. Réalisée dans le cadre de l'examen de première année du bachelor CDA de ForEach Academy. Le projet devait être réalisé en moins de 4 jours. L'application a un design mobile first avec un accès client et un accès barman.",
+  description2: "Le projet avait pour contraintes: les langages Java, SpringBoot, Typescript, Vue et MySQL, maquettes du projet sous Figma, MCD du back-end, création d'un dockefile pour le fornt-end et un autre pour le back-end ainsi qu'une démonstration devant un jurie.",
+  imgPath: "barapp.png", lien: "https://gitlab.com/barapp",
+  liensExtras: [
+    "https://gitlab.com/barapp"
+  ]
+})
 
+projets.value.push({
+  titre: "Youtube to MP3",
+  description: "Petite API REST en Node.js et Extress permettant de télécharger des vidéos Youtube et de les convertir en fichier mp3. L'API utilise un script bash pour télécharger un convertir les vidéos, ce script utilise youtube-dl plus et ffmpeg.",
+  description2: "Ce projet m'a servi d'introduction au framework Express et à l'envirronement Node.js.",
+  imgPath: "", lien: "https://gitlab.com/script_dump/youtube_to_mp3",
+  liensExtras: [
+    "https://gitlab.com/script_dump/youtube_to_mp3"
+  ]
+})
 
-console.log(projets.value.length);
+projets.value.push({
+  titre: "LabyJava",
+  description: "Projet de fin d'année de Licence 3 à la FAC Jean perrin reprenanat le jeu de société Labyrinthe. Le projet vennait tester nos compétences en Programmation Orienté Objet ainsi qu'en Interraction Humain-Machine",
+  description2: "Application client lourd réalisée en Java et JavaSwing.",
+  imgPath: "labyjava.png", lien: "https://gitlab.com/github_import2/LabyJava",
+  liensExtras: [
+    "https://gitlab.com/github_import2/LabyJava"
+  ]
+})
+
+projets.value.push({
+  titre: "Naval Battle",
+  description: "Application reprennant le jeu de société La Bataille Navale réalisé en C. Premier projet de programmation de la Licence 3 de la FAC de Jean-Perrin, le projet visait à évaluer nos compétence en programmtion, algoithmie et gestion de ressource mémoire.",
+  description2: "Le projet avait des contrainte tel que les navires composant la flotte des joueurs, la création d'une IA afin de pouvoir jouer contre l'ordinateur, la possibilité de sauvegarder une partie, etc. ",
+  imgPath: "bn.png", lien: "https://gitlab.com/github_import2/Naval_Battle",
+  liensExtras: [
+    "https://gitlab.com/github_import2/Naval_Battle"
+  ]
+})
+
+projets.value.push({
+  titre: "TriShell", description: "Script Bash mimant l'outil 'tree' et 'ls' des systèmes d'exploitation GNU/Linux. Projet de la Licence 3 de la FAC de Jean perrin servant à évaluer nos compétences en script Shell et connaissances des systémes Unix.",
+  description2: "Le script devait pouvoir lister le contenu du répertoire et de trier le résultat selon des instructions passées en paramètres.", imgPath: "", lien: "", liensExtras: ["https://gitlab.com/github_import2/TriShell"]
+})
+
+projets.value.push({
+  titre: "Portail des IUT", description: "Site web venant remettre au goût du jour le portail des IUT (datant d'avant 2018).",
+  description2: "Le site devait mettre à jour l'ancien portail des IUT en utilisant un web design plus moderne.Premier projet du DUT Informatique de LIUT de Lens, visant à évaluer nos compétences en HTML et CSS / Bootstrap ainsi qu'en web design et responsive design.", imgPath: "piut.png", lien: "https://gitlab.com/github_import2/Portail-IUT", liensExtras: ["https://gitlab.com/github_import2/Portail-IUT", "https://www.iut-informatique.fr/"]
+})
 
 </script>
 
@@ -32,31 +77,39 @@ console.log(projets.value.length);
   </header>
   <main>
     <div
-      class="inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+      class="inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_35%,#63e_100%)]">
       <div class="md:container md:mx-auto sm:px-10 flex justify-center items-center text-slate-200">
         <Bio />
       </div>
       <div class="md:container md:mx-auto sm:px-10 items-center justify-center">
         <Competences />
       </div>
-      <div class="text-center text-slate-200 pt-12 pb-16 flex flex-row justify-center items-center">
-          <i class="fa fa-arrow-down fa-2x"></i>
-          <div class="font-bold text-2xl px-16">Voici quelque projets</div>
-          <i class="fa fa-arrow-down fa-2x"></i>
-        </div>
+      <div class="text-center text-slate-200 pt-8 pb-16 flex flex-row justify-center items-center">
+        <i class="fa fa-arrow-down fa-2x"></i>
+        <div class="font-bold text-2xl px-16">Voici quelques projets</div>
+        <i class="fa fa-arrow-down fa-2x"></i>
+      </div>
       <div>
         <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 flex justify-center items-center">
-         <Projet :titre="item.titre" :description="item.description" :description2="item.description2" :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true"/>
+          <Projet class="pb-8" :titre="item.titre" :description="item.description" :description2="item.description2"
+            :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true" />
         </div>
-        
+
+        <div class="text-3xl font-bold text-center text-slate-200">
+          <p class="pt-6 pb-14">
+            Et bien d'autres ! Pourquoi ne pas aller faire un tour sur mon <a href="https://gitlab.com/iDrack"
+              class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
+                class="relative">GitLab</span></a> 👀 ?
+          </p>
+        </div>
+
       </div>
-      <footer class="h-50">
-      <Social />
-    </footer>
+      <footer class="pb-52">
+        <Social />
+      </footer>
     </div>
   </main>
 
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

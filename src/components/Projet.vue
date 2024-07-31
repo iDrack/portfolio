@@ -36,12 +36,11 @@ function getImageUrl() {
         </div>
       </div>
       <div class="">
-        <a :href="props.lien">
+        <a :href="props.lien" v-if="imgPath">
           <img :src="getImageUrl()" :alt="props.titre" class="!rounded-3xl">
         </a>
       </div>
     </div>
-
   </div>
 
 </template>
