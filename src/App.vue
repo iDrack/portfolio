@@ -105,7 +105,7 @@ projets.value.push({
         </div>
 
       </div>
-      <footer class="pb-52 md:pt-0 pt-52">
+      <footer class="md:pb-52 pb-48">
         <Social />
       </footer>
     </div>
