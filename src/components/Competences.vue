@@ -50,7 +50,7 @@ const getImageUrl = (logo) => {
       </ul>
     </div>
   </div>
-    <div id="skills" class="flex flex-wrap animate-shimmer bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-[length:400%_100%] rounded-lg shrink">
+    <div id="skills" class="flex flex-wrap animate-shimmer bg-gradient-to-r from-gray-800 via-[#6533ee86] to-gray-800 bg-[length:400%_100%] rounded-lg shrink">
       <div
         class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <ul
