@@ -41,6 +41,7 @@ function getImageUrl() {
         </a>
       </div>
     </div>
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-[80%] mx-auto  ">
   </div>
 
 </template>
