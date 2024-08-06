@@ -12,7 +12,7 @@ const projets = ref([])
 projets.value.push({
   titre: "La bonne Franquette",
   description: "La bonne Franquette est une solution de gestion de commandes destinée aux petits restaurateurs. Elle se démarque par sa facilité de mise en place ne nécessitant pas de système informatique spécialisé.",
-  description2: "Application réaisée dans le cadre de mon bachelor à ForEach Academy. Ce projet m\'a permit de mettre en oeuvre ce que j\'ai vu au cours de ce même bachelor, notement: la conception d\'applications en couche, le développemet mobile multi-plateforme, le développement d\'API REST, les principes DevOps.",
+  description2: "Application réalisée dans le cadre de mon bachelor à ForEach Academy. Ce projet m\'a permis de mettre en oeuvre ce que j\'ai vu au cours de ce même bachelor, notamment : la conception d\'application en couche, le développement mobile multiplate-forme, le développement d\'API REST, les principes DevOps.",
   imgPath: "lbf.png", lien: "https://franfran62.github.io/la-bonne-franquette-website/",
   liensExtras: [
     "https://github.com/Franfran62/la-bonne-franquette-appli",
@@ -24,7 +24,7 @@ projets.value.push({
 projets.value.push({
   titre: "Le Bar'App",
   description: "Application web de gestion de commandes de bar à cocktails. Réalisée dans le cadre de l'examen de première année du bachelor CDA de ForEach Academy. Le projet devait être réalisé en moins de 4 jours. L'application a un design mobile first avec un accès client et un accès barman.",
-  description2: "Le projet avait pour contraintes: les langages Java, SpringBoot, Typescript, Vue et MySQL, maquettes du projet sous Figma, MCD du back-end, création d'un dockefile pour le fornt-end et un autre pour le back-end ainsi qu'une démonstration devant un jurie.",
+  description2: "Le projet avait pour contraintes: les langages Java, SpringBoot, Typescript, Vue et MySQL, maquettes du projet sous Figma, MCD du back-end, création d'un dockefile pour le fornt-end et un autre pour le back-end ainsi qu'une démonstration devant un jury.",
   imgPath: "barapp2.png", lien: "https://gitlab.com/barapp",
   liensExtras: [
     "https://gitlab.com/barapp"
@@ -33,8 +33,8 @@ projets.value.push({
 
 projets.value.push({
   titre: "Youtube to MP3",
-  description: "Petite API REST en Node.js et Express permettant de télécharger des vidéos Youtube et de les convertir en fichier mp3. L'API utilise un script bash pour télécharger un convertir les vidéos, ce script utilise youtube-dl plus et ffmpeg.",
-  description2: "Ce projet m'a servi d'introduction au framework Express et à l'envirronement Node.js.",
+  description: "Petite API REST en Node.js et Express permettant de télécharger des vidéos Youtube et de les convertir en fichier mp3. L'API utilise un script bash pour télécharger et convertir les vidéos, ce script utilise youtube-dl plus et ffmpeg.",
+  description2: "Ce projet m'a servi d'introduction au framework Express et à l'environnement Node.js.",
   imgPath: "", lien: "https://gitlab.com/script_dump/youtube_to_mp3",
   liensExtras: [
     "https://gitlab.com/script_dump/youtube_to_mp3"
@@ -43,7 +43,7 @@ projets.value.push({
 
 projets.value.push({
   titre: "LabyJava",
-  description: "Projet de fin d'année de Licence 3 à la FAC Jean perrin reprenanat le jeu de société Labyrinthe. Le projet vennait tester nos compétences en Programmation Orienté Objet ainsi qu'en Interraction Humain-Machine",
+  description: "Projet de fin d'année de Licence 3 à la FAC Jean perrin reprenant le jeu de société Labyrinthe. Le projet venait tester nos compétences en Programmation Orienté Objet ainsi qu'en Interaction Humain-Machine.",
   description2: "Application client lourd réalisée en Java et JavaSwing.",
   imgPath: "labyjava.png", lien: "https://gitlab.com/github_import2/LabyJava",
   liensExtras: [
@@ -53,8 +53,8 @@ projets.value.push({
 
 projets.value.push({
   titre: "Naval Battle",
-  description: "Application reprennant le jeu de société La Bataille Navale réalisé en C. Premier projet de programmation de la Licence 3 de la FAC de Jean-Perrin, le projet visait à évaluer nos compétence en programmtion, algoithmie et gestion de ressource mémoire.",
-  description2: "Le projet avait des contrainte tel que les navires composant la flotte des joueurs, la création d'une IA afin de pouvoir jouer contre l'ordinateur, la possibilité de sauvegarder une partie, etc. ",
+  description: "Application reprenant le jeu de société \"La Bataille Navale réalisé\" en C. Premier projet de programmation de la Licence 3 de la FAC de Jean-Perrin, le projet visait à évaluer nos compétences en programmation, algorithmie et gestion de ressources mémoire.",
+  description2: "Le projet avait des contraintes tel que les navires composant la flotte des joueurs, la création d'une IA afin de pouvoir jouer contre l'ordinateur, la possibilité de sauvegarder une partie, etc. ",
   imgPath: "bn.png", lien: "https://gitlab.com/github_import2/Naval_Battle",
   liensExtras: [
     "https://gitlab.com/github_import2/Naval_Battle"
@@ -62,7 +62,7 @@ projets.value.push({
 })
 
 projets.value.push({
-  titre: "TriShell", description: "Script Bash mimant l'outil 'tree' et 'ls' des systèmes d'exploitation GNU/Linux. Projet de la Licence 3 de la FAC de Jean perrin servant à évaluer nos compétences en script Shell et connaissances des systémes Unix.",
+  titre: "TriShell", description: "Script Bash mimant les outils \"tree\" et \"ls\" des systèmes d'exploitation GNU/Linux. Projet de la Licence 3 de la FAC de Jean Perrin servant à évaluer nos compétences en script Shell et connaissances des systèmes Unix.",
   description2: "Le script devait pouvoir lister le contenu du répertoire et de trier le résultat selon des instructions passées en paramètres.", imgPath: "", lien: "", liensExtras: ["https://gitlab.com/github_import2/TriShell"]
 })
 
