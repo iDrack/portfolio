@@ -12,7 +12,7 @@ const projets = ref([])
 projets.value.push({
   titre: "La bonne Franquette",
   description: "La bonne Franquette est une solution de gestion de commandes destinée aux petits restaurateurs. Elle se démarque par sa facilité de mise en place ne nécessitant pas de système informatique spécialisé.",
-  description2: "Application réalisée dans le cadre de mon bachelor à ForEach Academy. Ce projet m\'a permis de mettre en oeuvre ce que j\'ai vu au cours de ce même bachelor, notamment : la conception d\'application en couche, le développement mobile multiplate-forme, le développement d\'API REST, les principes DevOps.",
+  description2: "Application réalisée dans le cadre de mon bachelor à ForEach Academy. Ce projet m\'a permis de mettre en oeuvre ce que j\'ai vu au cours de ce même bachelor, notamment : la conception d\'application en couche, le développement mobile multiplateforme, le développement d\'API REST, les principes DevOps.",
   imgPath: "lbf.png", lien: "https://franfran62.github.io/la-bonne-franquette-website/",
   liensExtras: [
     "https://github.com/Franfran62/la-bonne-franquette-appli",
