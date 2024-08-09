@@ -17,7 +17,7 @@ const handleClick = () => {
           Développeur d'Applications</span>
       </h1>
       <p class="text-center md:text-lg text-xs"> Je conçois et développe des applications web et mobiles facile d'utilisation.</p>
-      <p class="text-center md:text-lg text-xs"> Actuellement en formation à <a href="https://www.foreach-academy.fr/"
+      <p class="text-center md:text-lg text-xs"> À la recherche d'une alternance pour ma seconde année de bachelor chez <a href="https://www.foreach-academy.fr/"
           class="group text-gray-200 hover:text-[#63e] transition ease-in-out duration-200">ForEach Academy <span
             aria-hidden="true"
             class="inline-block translate-x-0 group-hover:translate-x-1 transition-transform ease-in-out duration-200">→</span></a>
@@ -25,8 +25,12 @@ const handleClick = () => {
       <div class="flex pt-4">
         <div class="grow"></div>
         <a href="mailto:tdignoire@pm.me"
-          class="group [transform:translateZ(0)] px-6 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500">
+          class="group [transform:translateZ(0)] w-48 text-center px-6 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-300">
           <span class="relative z-0 font-bold md:text-xl text-base text-black group-hover:text-gray-200 transition ease-in-out duration-500">Me contacter</span></a>
+        <div class="grow"></div>
+          <a href="/src/assets/docs/CV_Thomas Dignoire.pdf" target="_blank"
+          class="group [transform:translateZ(0)] w-48 text-center px-6 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-300">
+          <span class="relative z-0 font-bold md:text-xl text-base text-black group-hover:text-gray-200 transition ease-in-out duration-500">Mon CV</span></a>
         <div class="grow"></div>
       </div>
     </div>
