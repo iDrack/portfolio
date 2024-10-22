@@ -25,11 +25,11 @@ const handleClick = () => {
       <div class="flex pt-4">
         <div class="grow"></div>
         <a href="mailto:tdignoire@pm.me"
-          class="group [transform:translateZ(0)] w-48 text-center px-6 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-300">
+          class="group [transform:translateZ(0)] md:w-48 w-32 text-center md:px-6 px-2 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-300">
           <span class="relative z-0 font-bold md:text-xl text-base text-black group-hover:text-gray-200 transition ease-in-out duration-500">Me contacter</span></a>
         <div class="grow"></div>
-          <a href="/src/assets/docs/CV_Thomas Dignoire.pdf" target="_blank"
-          class="group [transform:translateZ(0)] w-48 text-center px-6 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-300">
+          <a href="/CV_Thomas Dignoire.pdf" target="_blank"
+          class="group [transform:translateZ(0)] md:w-48 w-32 text-center md:px-6 px-2 py-3 rounded-3xl overflow-hidden bg-gray-200 relative before:absolute before:bg-[#63e] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-300">
           <span class="relative z-0 font-bold md:text-xl text-base text-black group-hover:text-gray-200 transition ease-in-out duration-500">Mon CV</span></a>
         <div class="grow"></div>
       </div>

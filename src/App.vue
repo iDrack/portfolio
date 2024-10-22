@@ -1,9 +1,9 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import {RouterLink, RouterView} from 'vue-router'
 import Bio from '@/components/Bio.vue';
 import Social from './components/Social.vue';
 import Projet from './components/Projet.vue';
-import { ref } from 'vue';
+import {ref} from 'vue';
 import Competences from './components/Competences.vue';
 import 'flowbite/dist/flowbite.js'
 
@@ -20,6 +20,18 @@ projets.value.push({
     "https://franfran62.github.io/la-bonne-franquette-website/",
   ]
 })
+
+projets.value.push({
+    titre: "ForEach Pizzas",
+    description: "Application Flutter utilisant la solution de Google Firebase comme back-end. Cette application a été réalisée lors de mon cursus chez ForEach Academy afin de pratiquer le développement d'application mobile en Flutter.",
+    description2: "ForEach Pizza est une application mobile de commande groupé de pizza. Elle permet donc la prise de commande groupé, d'afficher un récapitulatif de la commande par utilisateur ainsi qu'une répartition des prix par utilisateurs. Vous pouvez rejoindre le programme de test en cliquant sur le second lien.",
+    imgPath: "fpizza.png", lien: "https://gitlab.com/flutter_foreach/flutter_exo_1",
+  liensExtras: [
+      "https://gitlab.com/flutter_foreach/flutter_exo_1",
+      "https://appdistribution.firebase.dev/i/7867194136919c95"
+    ]
+  }
+)
 
 projets.value.push({
   titre: "Le Bar'App",
@@ -62,13 +74,21 @@ projets.value.push({
 })
 
 projets.value.push({
-  titre: "TriShell", description: "Script Bash mimant les outils \"tree\" et \"ls\" des systèmes d'exploitation GNU/Linux. Projet de la Licence 3 de la FAC de Jean Perrin servant à évaluer nos compétences en script Shell et connaissances des systèmes Unix.",
-  description2: "Le script devait pouvoir lister le contenu du répertoire et de trier le résultat selon des instructions passées en paramètres.", imgPath: "", lien: "", liensExtras: ["https://gitlab.com/github_import2/TriShell"]
+  titre: "TriShell",
+  description: "Script Bash mimant les outils \"tree\" et \"ls\" des systèmes d'exploitation GNU/Linux. Projet de la Licence 3 de la FAC de Jean Perrin servant à évaluer nos compétences en script Shell et connaissances des systèmes Unix.",
+  description2: "Le script devait pouvoir lister le contenu du répertoire et de trier le résultat selon des instructions passées en paramètres.",
+  imgPath: "",
+  lien: "",
+  liensExtras: ["https://gitlab.com/github_import2/TriShell"]
 })
 
 projets.value.push({
-  titre: "Portail des IUT", description: "Site web venant remettre au goût du jour le portail des IUT (datant d'avant 2018).",
-  description2: "Le site devait mettre à jour l'ancien portail des IUT en utilisant un web design plus moderne.Premier projet du DUT Informatique de LIUT de Lens, visant à évaluer nos compétences en HTML et CSS / Bootstrap ainsi qu'en web design et responsive design.", imgPath: "piut.png", lien: "https://gitlab.com/github_import2/Portail-IUT", liensExtras: ["https://gitlab.com/github_import2/Portail-IUT", "https://www.iut-informatique.fr/"]
+  titre: "Portail des IUT",
+  description: "Site web venant remettre au goût du jour le portail des IUT (datant d'avant 2018).",
+  description2: "Le site devait mettre à jour l'ancien portail des IUT en utilisant un web design plus moderne.Premier projet du DUT Informatique de LIUT de Lens, visant à évaluer nos compétences en HTML et CSS / Bootstrap ainsi qu'en web design et responsive design.",
+  imgPath: "piut.png",
+  lien: "https://gitlab.com/github_import2/Portail-IUT",
+  liensExtras: ["https://gitlab.com/github_import2/Portail-IUT", "https://www.iut-informatique.fr/"]
 })
 
 </script>
@@ -78,12 +98,12 @@ projets.value.push({
   </header>
   <main>
     <div
-      class="inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_35%,#63e_100%)]">
+        class="inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_35%,#63e_100%)]">
       <div class="md:container md:mx-auto sm:px-10 flex justify-center items-center text-slate-200">
-        <Bio />
+        <Bio/>
       </div>
       <div class="md:container md:mx-auto sm:px-10 items-center justify-center">
-        <Competences />
+        <Competences/>
       </div>
       <div class="text-center text-slate-200 pt-8 pb-16 flex flex-row justify-center items-center">
         <i class="fa fa-arrow-down fa-sm"></i>
@@ -93,20 +113,20 @@ projets.value.push({
       <div>
         <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 justify-center items-center">
           <Projet class="pb-8" :titre="item.titre" :description="item.description" :description2="item.description2"
-            :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true" />
+                  :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true"/>
         </div>
 
         <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
             Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://gitlab.com/iDrack"
-              class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
-                class="relative">GitLab</span></a> 👀 ?
+                                                                                 class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
+              class="relative">GitLab</span></a> 👀 ?
           </p>
         </div>
 
       </div>
       <footer class="md:pb-52 pb-48">
-        <Social />
+        <Social/>
       </footer>
     </div>
   </main>
