@@ -5,13 +5,13 @@ const master = ref([{ name: "html" }, { name: "css" }, { name: "bootstrap" }, { 
                     { name: "java" }, { name: "spring" }, { name: "hibernate" }, { name: "maven" }, { name: "gradle" }, { name: "junit" },
                     { name: "javascript" }, { name: "typescript" }, { name: "vue" }, { name: "vite" }, { name: "pinia" }, { name: "nodejs" }, { name: "express" }, { name: "npm" }, 
                     { name: "dart" }, {name: "flutter"},
-                    { name: "c"}, { name: "python" },
+                    {name: "lua"}, { name: "c"}, { name: "python" },
                     { name: "mysql" }, { name: "sqlite" }, { name: "postgresql" }, { name: "mongodb" },
                     { name: "git" }, { name: "github" }, { name: "githubaction" }, { name: "gitlab" }, { name: "docker" }, { name: "bash" }, { name: "linux" }, 
-                    { name: "vscode"}, { name: "intellij" }, { name: "webstorm" }, { name: "eclipse" },
+                    { name: "vscode"}, { name: "intellij" }, { name: "webstorm" }, {name: "androidstudio"}, { name: "eclipse" },
                     { name: "figma" }, { name: "dbeaver" }, { name: "filezilla" },{ name: "postman" },])
 
-const competences = ref([{name : "Conception d'applications en couche"}, {name: "Développement d'API REST"}, {name: "Développement d'applications web et mobile"}, {name: "CI/CD et DevOps"}, {name: "Méthodologie Agile"}, {name: "Clean code"}])
+const competences = ref([{name : "Conception d'applications en couche"}, {name : "Conception & maquettage UI/UX"}, {name: "Développement d'API REST"}, {name: "Développement d'applications web et mobile"}, {name: "CI/CD et DevOps"}, {name: "Méthodologie Agile"}, {name: "Clean code"}, {name: "Gestion de projet"}])
 
 const getImageUrl = (logo) => {
   return new URL(`../assets/img/logos/${logo}.svg`, import.meta.url)

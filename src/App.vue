@@ -8,7 +8,11 @@ import Competences from './components/Competences.vue';
 import 'flowbite/dist/flowbite.js'
 
 const projets = ref([])
-
+//TODO: Changer les projets mis en avant (ainsi que leur capture d'écran et le lien (pointé vers github au lieu de gitlab)
+//TODO: Afficher uniquement les 3 projets les plus pertinants et afficher le reste des projet dans une vue à part
+//Liste des projets a mettre en avant: La bonne Franquette, Mégapoll et Youtube to MP3 (Vue version)
+//TODO: Page exclusive pour mes jeu pico8 (quand ils seront disponible)
+//TODO: Ajouter un lien vers Lexaloffle games
 projets.value.push({
   titre: "La bonne Franquette",
   description: "La bonne Franquette est une solution de gestion de commandes destinée aux petits restaurateurs. Elle se démarque par sa facilité de mise en place ne nécessitant pas de système informatique spécialisé.",
@@ -118,9 +122,9 @@ projets.value.push({
 
         <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
-            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://gitlab.com/iDrack"
+            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack"
                                                                                  class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
-              class="relative">GitLab</span></a> 👀 ?
+              class="relative">GitHub</span></a> 👀 ?
           </p>
         </div>
 
