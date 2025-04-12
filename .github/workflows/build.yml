@@ -16,24 +16,19 @@ jobs:
         with:
           node_version: 18
       - name: npm install
-        run: npm install
-      - name: npm build
-        run: npm run build
-      - name: rename dist to www
-        run: mv ./dist ./www
+        run: |
+          npm install
+          npm run build
       - name: get the dist file into an artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: www
-          path: ./www
-      - name: upload to ftp server
-        uses: sokuhatiku/ftp-upload-artifact@v1
+         name: portfolio
+         path: ./dist
+      - name: Upload to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          name: upload
-          path: ./www
-          host: ftp.duve3138.odns.fr
-          port: 21
-          username: ${{ secrets.FTP_USERNAME }}
+          server: ftp.duve3138.odns.fr
+          username:  ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          secure: false
-          remote-path: /
+          local-dir: ./dist/
+          server-dir: /www/
