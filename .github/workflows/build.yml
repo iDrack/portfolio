@@ -3,32 +3,45 @@ on:
   push:
     tags:
       - "**"
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   build_vue:
     runs-on: ubuntu-latest
     name: Build Vue
     steps:
-      - name: get the code
+      - name: Get the code
         uses: actions/checkout@v4
-      - name: setup node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node_version: 18
-      - name: npm install
+          node-version: 18
+      - name: Install dependencies and build
         run: |
           npm install
           npm run build
-      - name: get the dist file into an artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload dist as artifact
+        uses: actions/upload-artifact@v3
         with:
-         name: portfolio
-         path: ./dist
+          name: dist-artifact
+          path: ./dist
+
+  upload_ftp:
+    runs-on: ubuntu-latest
+    name: Upload to FTP
+    needs: build_vue
+    steps:
+      - name: Download dist artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-artifact
+          path: ./dist
       - name: Upload to FTP server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.cluster029.hosting.ovh.net
-          username:  ${{ secrets.FTP_USERNAME }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /www/
