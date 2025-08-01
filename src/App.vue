@@ -128,7 +128,7 @@ projets.value.push({
 
         <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
-            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack"
+            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack" title="https://github.com/iDrack" target="_blank"
               class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
                 class="relative">GitHub</span></a> 👀 ?
           </p>
