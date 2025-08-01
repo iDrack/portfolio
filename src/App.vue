@@ -8,11 +8,6 @@ import Competences from './components/Competences.vue';
 import 'flowbite/dist/flowbite.js'
 
 const projets = ref([])
-//TODO: Changer les projets mis en avant (ainsi que leur capture d'écran et le lien (pointé vers github au lieu de gitlab)
-//TODO: Afficher uniquement les 3 projets les plus pertinants et afficher le reste des projet dans une vue à part
-//Liste des projets a mettre en avant: La bonne Franquette, Mégapoll et Youtube to MP3 (Vue version)
-//TODO: Page exclusive pour mes jeu pico8 (quand ils seront disponible)
-//TODO: Ajouter un lien vers Lexaloffle games
 projets.value.push({
   titre: "La bonne Franquette",
   description: "La bonne Franquette est une solution de gestion de commandes destinée aux petits restaurateurs. Elle se démarque par sa facilité de mise en place ne nécessitant pas de système informatique spécialisé.",
@@ -115,10 +110,10 @@ projets.value.push({
         <i class="fa fa-arrow-down fa-sm"></i>
       </div>
       <div>
-        <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 justify-center items-center">
+<!--         <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 justify-center items-center">
           <Projet class="pb-8" :titre="item.titre" :description="item.description" :description2="item.description2"
                   :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true"/>
-        </div>
+        </div> -->
 
         <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
