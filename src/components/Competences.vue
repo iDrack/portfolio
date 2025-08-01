@@ -1,17 +1,17 @@
 <script setup>
 import { onBeforeMount, ref } from 'vue';
 
-const master = ref([{ name: "html" }, { name: "css" }, { name: "bootstrap" }, { name: "tailwind" },
-                    { name: "java" }, { name: "spring" }, { name: "hibernate" }, { name: "maven" }, { name: "gradle" }, { name: "junit" },
-                    { name: "javascript" }, { name: "typescript" }, { name: "vue" }, { name: "vite" }, { name: "pinia" }, { name: "nodejs" }, { name: "express" }, { name: "npm" }, 
-                    { name: "dart" }, {name: "flutter"},
-                    {name: "lua"}, { name: "c"}, { name: "python" },
-                    { name: "mysql" }, { name: "sqlite" }, { name: "postgresql" }, { name: "mongodb" },
-                    { name: "git" }, { name: "github" }, { name: "githubaction" }, { name: "gitlab" }, { name: "docker" }, { name: "bash" }, { name: "linux" }, 
-                    { name: "vscode"}, { name: "intellij" }, { name: "webstorm" }, {name: "androidstudio"}, { name: "eclipse" },
-                    { name: "figma" }, { name: "dbeaver" }, { name: "filezilla" },{ name: "postman" },])
+const master = ref([{ name: "html" }, { name: "css" }, { name: "tailwind" },
+{ name: "java" }, { name: "spring" }, { name: "hibernate" }, { name: "maven" }, { name: "gradle" }, { name: "junit" },
+{ name: "javascript" }, { name: "typescript" }, { name: "vue" }, { name: "vite" }, { name: "pinia" }, { name: "nodejs" }, { name: "express" }, { name: "npm" },
+{ name: "dart" }, { name: "flutter" },
+{ name: "lua" },
+{ name: "mysql" }, { name: "sqlite" }, { name: "postgresql" }, { name: "mongodb" },
+{ name: "git" }, { name: "github" }, { name: "githubaction" }, { name: "gitlab" }, { name: "docker" }, { name: "bash" }, { name: "linux" },
+{ name: "vscode" }, { name: "intellij" }, { name: "webstorm" }, { name: "androidstudio" },
+{ name: "figma" }, { name: "dbeaver" }, { name: "postman" },])
 
-const competences = ref([{name : "Conception d'applications en couche"}, {name : "Conception & maquettage UI/UX"}, {name: "Développement d'API REST"}, {name: "Développement d'applications web et mobile"}, {name: "CI/CD et DevOps"}, {name: "Méthodologie Agile"}, {name: "Clean code"}, {name: "Gestion de projet"}])
+const competences = ref([{ name: "Conception d'applications en couche" }, { name: "Conception & maquettage UI/UX" }, { name: "Développement d'API REST" }, { name: "Développement d'applications web et mobile" }, { name: "CI/CD et DevOps" }, { name: "Méthodologie Agile" }, { name: "Clean code" }, { name: "Gestion de projet" }])
 
 const getImageUrl = (logo) => {
   return new URL(`../assets/img/logos/${logo}.svg`, import.meta.url)
@@ -50,23 +50,24 @@ const getImageUrl = (logo) => {
       </ul>
     </div>
   </div>
-    <div id="skills" class="flex flex-wrap animate-shimmer bg-gradient-to-r from-gray-800 via-[#6533ee4d] to-gray-800 bg-[length:400%_100%] rounded-lg shrink">
-      <div
-        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-        <ul
-          class="flex items-center justify-center md:justify-start md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          <li v-for="item in master" :key="item.name" class="justify-start m-3">
-            <img :src="getImageUrl(item.name)" :alt="item.name" class="md:w-[50px] md:h-[50px] w-[25px] h-[25px]">
-          </li>
-        </ul>
-        <ul
-          class="flex items-center justify-center md:justify-start md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          <li v-for="item in master" :key="item.name" class="justify-start m-3">
-            <img :src="getImageUrl(item.name)" :alt="item.name" class="md:w-[50px] md:h-[50px] w-[25px] h-[25px]">
-          </li>
-        </ul>
-      </div>
+  <div id="skills"
+    class="flex flex-wrap animate-shimmer bg-gradient-to-r from-gray-800 via-[#6533ee4d] to-gray-800 bg-[length:400%_100%] rounded-lg shrink">
+    <div
+      class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <ul
+        class="flex items-center justify-center md:justify-start md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+        <li v-for="item in master" :key="item.name" class="justify-start m-3">
+          <img :src="getImageUrl(item.name)" :alt="item.name" class="md:w-[50px] md:h-[50px] w-[25px] h-[25px]">
+        </li>
+      </ul>
+      <ul
+        class="flex items-center justify-center md:justify-start md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+        <li v-for="item in master" :key="item.name" class="justify-start m-3">
+          <img :src="getImageUrl(item.name)" :alt="item.name" class="md:w-[50px] md:h-[50px] w-[25px] h-[25px]">
+        </li>
+      </ul>
     </div>
+  </div>
 </template>
 
 <style scoped></style>

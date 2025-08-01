@@ -1,5 +1,7 @@
 <script setup>
+import ShinyText from '@/TextAnimations/ShinyText/ShinyText.vue';
 import SplitText from '@/TextAnimations/SplitText/SplitText.vue';
+import TextType from '@/TextAnimations/TextType/TextType.vue';
 
 
 
@@ -14,12 +16,16 @@ const handleClick = () => {
       <div class="flex justify-center items-center">
         <img src="../assets/img/pfp_pro.png" alt="avatar" class="object-top h-[175px] w-[175px] !rounded-full" />
       </div>
-      <h1 class="text-center font-bold py-6 md:text-2xl text-lg"> Bonjour 👋 je suis Thomas Dignoire </h1>
+      <h1 class="text-center font-bold py-6 md:text-2xl text-lg">
+        <ShinyText text="Bonjour 👋 je suis Thomas Dignoire" :disabled="false" :speed="2.5" />
+      </h1>
       <h1 class="text-center font-bold pb-4">
-        <SplitText class="text-center font-bold md:text-5xl text-3xl whitespace-normal break-words pb-4"
-          text="Concepteur Développeur d'Applications" class-name="text-2xl font-semibold text-center" :delay="100"
-          :duration="0.4" ease="power3.out" split-type="chars" :from="{ opacity: 0, y: 40 }" :to="{ opacity: 1, y: 0 }"
-          :threshold="0.1" root-margin="-100px" text-align="center" @animation-complete="() => { }" />
+        <TextType class="text-center font-bold md:text-5xl text-3xl whitespace-normal break-words pb-4"
+          :text="[`Concepteur Développeur d'Applications`, 
+                  `Développeur Fullstack`, 
+                  `Développeur Mobile`,]"
+                  :variableSpeed="{ min: 60, max: 120 }"
+          :typingSpeed="75" :pauseDuration="1500" :showCursor="true" cursorCharacter="_" />
       </h1>
 
       <p class="text-center md:text-lg text-xs"> Je conçois et développe des applications web et mobiles facile
