@@ -117,15 +117,10 @@ projets.value.push({
       </div>
       <div class="text-center text-slate-200 pt-8 pb-16 flex flex-row justify-center items-center">
         <i class="fa fa-arrow-down fa-sm"></i>
-        <div class="font-bold md:px-16 px-4 md:text-2xl text-lg">Voici quelques projets</div>
+        <div class="font-bold md:px-16 px-4 md:text-3xl text-xl">Voici quelques projets</div>
         <i class="fa fa-arrow-down fa-sm"></i>
       </div>
       <div>
-        <!--         <div v-for="(item, index) in projets" class="md:container md:mx-auto sm:px-10 justify-center items-center">
-          <Projet class="pb-8" :titre="item.titre" :description="item.description" :description2="item.description2"
-                  :img-path="item.imgPath" :lien="item.lien" :liens-extras="item.liensExtras" :a-droite="true"/>
-        </div> -->
-
         <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
             Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack" title="https://github.com/iDrack" target="_blank"
