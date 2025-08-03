@@ -1,12 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Bio from '@/components/Bio.vue';
-import Social from './components/Social.vue';
-import Projet from './components/Projet.vue';
+import Bio from '@/Components/Bio.vue';
+import Social from './Components/Social.vue';
+import Projet from './Components/Projet.vue';
 import { ref } from 'vue';
-import Competences from './components/Competences.vue';
+import Competences from './Components/Competences.vue';
 import 'flowbite/dist/flowbite.js'
-import Squares from './Backgrounds/Squares/Squares.vue';
+import Squares from './Components/Backgrounds/Squares/Squares.vue';
 
 const projets = ref([])
 projets.value.push({
@@ -98,17 +97,11 @@ projets.value.push({
   </header>
   <main class="relative min-h-screen">
     <div class="fixed inset-0 z-0">
-       <Squares
-      direction="diagonal"
-      :speed="0.5"
-      :squareSize="40"
-      borderColor="#555"
-      hoverFillColor="#fff"
-    />
+      <Squares direction="diagonal" :speed="0.5" :squareSize="40" borderColor="#555" hoverFillColor="#fff" />
     </div>
 
     <div class="relative px-5 py-24">
-   
+
       <div class="md:container md:mx-auto sm:px-10 flex justify-center items-center text-slate-200">
         <Bio />
       </div>
@@ -123,7 +116,8 @@ projets.value.push({
       <div>
         <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
           <p class="pt-6 pb-14">
-            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack" title="https://github.com/iDrack" target="_blank"
+            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack"
+              title="https://github.com/iDrack" target="_blank"
               class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
                 class="relative">GitHub</span></a> 👀 ?
           </p>
@@ -140,6 +134,7 @@ projets.value.push({
 
 <style scoped>
 main {
-  background-color: black; /* Couleur de fond de secours */
+  background-color: black;
+  /* Couleur de fond de secours */
 }
 </style>

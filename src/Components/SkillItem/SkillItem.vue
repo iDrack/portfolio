@@ -16,13 +16,13 @@ const getImageUrl = (logo) => {
   if (logo.includes('.')) {
     logo = logo.split('.')[0];
   }
-  return new URL(`../assets/img/logos/${logo}.svg`, import.meta.url)
+  return new URL(`/src/assets/img/logos/${logo}.svg`, import.meta.url)
 }
 
 </script>
 
 <template>
-  <span class="flex items-center gap-2">
+  <span class="flex items-center gap-2 text-xs md:text-sm">
     <img v-if="showImage" :src="getImageUrl(props.name)" :alt="props.name"
       class="md:w-[32px] md:h-[32px] w-[24px] h-[24px]">
     <span>{{ props.name }}</span>
