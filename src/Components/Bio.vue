@@ -1,5 +1,5 @@
 <script setup>
-import StarBorder from '@/Animations/StarBorder/StarBorder.vue';
+import StarBorder from './Animations/StarBorder/StarBorder.vue';
 import ShinyText from './TextAnimations/ShinyText/ShinyText.vue';
 import TextType from './TextAnimations/TextType/TextType.vue';
 
@@ -11,7 +11,7 @@ import TextType from './TextAnimations/TextType/TextType.vue';
   <div class="flex justify-center items-center">
     <div>
       <div class="flex justify-center items-center">
-        <img src="../assets/img/pfp_pro.png" alt="avatar" class="object-top h-[175px] w-[175px] !rounded-full" />
+        <img src="../assets/img/pfp_pro.webp" alt="avatar" class="object-top h-[175px] w-[175px] !rounded-full" />
       </div>
       <h1 class="text-center font-bold py-6 md:text-2xl text-lg">
         <ShinyText text="Bonjour 👋 je suis Thomas Dignoire." :disabled="false" :speed="2.5" />
@@ -44,7 +44,6 @@ import TextType from './TextAnimations/TextType/TextType.vue';
         <div class="grow"></div>
       </div>
     </div>
-
   </div>
 
 

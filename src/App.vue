@@ -1,11 +1,13 @@
 <script setup>
 import Bio from '@/Components/Bio.vue';
 import Social from './Components/Social.vue';
-import Projet from './Components/Projet.vue';
+import Projet from './Components/Projets.vue';
 import { ref } from 'vue';
 import Competences from './Components/Competences.vue';
 import 'flowbite/dist/flowbite.js'
 import Squares from './Components/Backgrounds/Squares/Squares.vue';
+import ProjectItem from './Components/ProjectItem/ProjectItem.vue';
+import Projets from './Components/Projets.vue';
 
 const projets = ref([])
 projets.value.push({
@@ -108,21 +110,8 @@ projets.value.push({
       <div class="md:container md:mx-auto sm:px-10 items-center justify-center">
         <Competences />
       </div>
-      <div class="text-center text-slate-200 pt-8 pb-16 flex flex-row justify-center items-center">
-        <i class="fa fa-arrow-down fa-sm"></i>
-        <div class="font-bold md:px-16 px-4 md:text-3xl text-xl">Voici quelques projets</div>
-        <i class="fa fa-arrow-down fa-sm"></i>
-      </div>
-      <div>
-        <div class="md:text-3xl text-xl font-bold text-center text-slate-200">
-          <p class="pt-6 pb-14">
-            Et bien d'autres !<br>Pourquoi ne pas aller faire un tour sur mon <a href="https://github.com/iDrack"
-              title="https://github.com/iDrack" target="_blank"
-              class="relative before:absolute before:bg-[#63e] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span
-                class="relative">GitHub</span></a> 👀 ?
-          </p>
-        </div>
-
+      <div class="md:container md:mx-auto sm:px-10 items-center justify-center">
+        <Projets />
       </div>
       <footer class="md:pb-52 pb-48">
         <Social />
