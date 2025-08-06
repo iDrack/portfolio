@@ -33,7 +33,7 @@ const getLogoUrl = (logo) => {
 }
 
 const imgWidth = () => {
-  return ""+props.imgSize+""
+  return "" + props.imgSize + ""
 }
 </script>
 
@@ -43,7 +43,7 @@ const imgWidth = () => {
       <h1 class="text-center md:text-3xl text-xl font-bold">
         {{ props.title }}
       </h1>
-      
+
       <div class="flex-grow flex flex-col justify-center">
         <div v-if="isActive">
           <div class="md:text-lg text-xs py-3 text-center whitespace-pre-line">
@@ -53,7 +53,8 @@ const imgWidth = () => {
         <div v-else>
           <div class="py-3 flex justify-center">
             <!--Thumbnail-->
-            <img :src="getImageUrl()" :alt="props.titre" :class="'hidden md:block !rounded-xl h-fit md:w-['+props.imgSize+'%] '">
+            <img :src="getImageUrl()" :alt="props.titre" :style="{ width: imgWidth() + '%' }"
+              :class="'hidden md:block !rounded-xl h-fit'">
           </div>
           <div class=" md:text-xl text-lg font-semibold text-center">
             <!--Description-->
@@ -77,13 +78,13 @@ const imgWidth = () => {
           <a :href="props.link" title="Accéder au dépôt." target="_blank">
             <FontAwesomeIcon v-if="props.link.includes('gitlab.com')" :icon="['fab', 'gitlab']" size="2x"
               class="transition-transform duration-200 hover:scale-125" />
-              <FontAwesomeIcon v-else :icon="['fab', 'github']" size="2x"
+            <FontAwesomeIcon v-else :icon="['fab', 'github']" size="2x"
               class="transition-transform duration-200 hover:scale-125" />
           </a>
-            <a v-if="props.websiteLink" :href="props.websiteLink" title="Visiter l'application." target="_blank">
-              <FontAwesomeIcon :icon="['fas', 'link']" size="2x"
+          <a v-if="props.websiteLink" :href="props.websiteLink" title="Visiter l'application." target="_blank">
+            <FontAwesomeIcon :icon="['fas', 'link']" size="2x"
               class="transition-transform duration-200 hover:scale-125" />
-            </a>
+          </a>
 
         </div>
       </div>
