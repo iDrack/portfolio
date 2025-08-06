@@ -96,6 +96,9 @@ projets.value.push({
 
 <template>
   <header>
+    <meta name="description"
+      content="Portfolio de Dignoire Thomas, développeur fullstack : découvrez mes projets front-end, back-end et mobile, mes compétences techniques et mon parcours académique.">
+    </meta>
   </header>
   <main class="relative min-h-screen">
     <div class="fixed inset-0 z-0">

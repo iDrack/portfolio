@@ -28,7 +28,7 @@ const handleClick = () => {
             class="transition-transform duration-200 hover:scale-125" />
         </span></button>
     </div>
-    <a href="https://www.linkedin.com/in/thomas-dignoire-882618281">
+    <a href="https://www.linkedin.com/in/thomas-dignoire-882618281"  title="Me retrouver sur LinkedIn.">
       <button
         class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] text-xs text-white shadow-md shadow-gray-900/10 hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none rounded-full bg-[#0a66c2] hover:shadow-[#1DA1F2]/20 focus:shadow-[#1DA1F2]/20 active:shadow-[#1DA1F2]/10"
         type="button" title="Aller sur mon LinkedIn">
@@ -37,7 +37,7 @@ const handleClick = () => {
             class="transition-transform duration-200 hover:scale-125" />
         </span></button>
     </a>
-    <a href="https://gitlab.com/iDrack">
+    <a href="https://gitlab.com/iDrack" title="Accéder à mon GitHub.">
       <button
         class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] text-xs text-white shadow-md shadow-gray-900/10 hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none rounded-full bg-[#e24329] hover:shadow-[#ea4c89]/20 focus:shadow-[#ea4c89]/20 active:shadow-[#ea4c89]/10"
         type="button" title="https://gitlab.com/iDrack">
@@ -46,7 +46,7 @@ const handleClick = () => {
             class="transition-transform duration-200 hover:scale-125" />
         </span></button>
     </a>
-    <a href="https://github.com/iDrack">
+    <a href="https://github.com/iDrack" title="Accéder à mon GitLab.">
       <button
         class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] text-xs text-white shadow-md shadow-gray-900/10 hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none rounded-full bg-[#333333] hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10"
         type="button" title="https://github.com/iDrack">
