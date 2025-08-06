@@ -37,7 +37,7 @@ import TextType from './TextAnimations/TextType/TextType.vue';
         </a>
         <div class="grow"></div>
         <a href="/CV_Thomas Dignoire.pdf" title="Télécharger mon CV" target="_blank" class="text-center relative py-3">
-          <StarBorder as="button" :color="'green'" :speed="'6s'" :thickness="3" customClass="z-10">
+          <StarBorder as="button" :color="'lightgreen'" :speed="'6s'" :thickness="3" customClass="z-10">
             <span class="relative font-bold md:text-xl text-base">Mon CV</span>
           </StarBorder>
         </a>
