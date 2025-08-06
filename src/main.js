@@ -19,11 +19,11 @@ library.add(faEnvelope)
 library.add(faLink)
 
 const app = createApp(App)
-if (import.meta.env.PROD) {
-  app.config.warnHandler = () => {};
-  app.config.errorHandler = () => {};
-  window.console.error = () => {};
-  window.console.warn = () => {};
-}
+//Suppression des messages dans la console
+app.config.warnHandler = () => {};
+app.config.errorHandler = () => {};
+window.console.error = () => {};
+window.console.warn = () => {};
+
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
