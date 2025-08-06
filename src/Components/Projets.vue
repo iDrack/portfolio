@@ -27,7 +27,7 @@ import ProjectItem from './ProjectItem/ProjectItem.vue';
       description="Portfolio d'applications web et mobiel avec un style modrne et sobre." content="Portfolio d'applications web et mobile réalisé en Vue.js et Tailwind.
           Vous êtes déjà dessus !
           Qu'en pensez-vous ?"
-      :technos="['Javascript', 'Vue.js', 'tailwind']" image="portfolio.png"
+      :technos="['Javascript', 'Vue.js', 'tailwind']" image="portfolio.webp"
       link="https://github.com/iDrack/portfolio" website-link="https://thomasdignoire.fr"
       class="h-full flex flex-col" />
   </div>
