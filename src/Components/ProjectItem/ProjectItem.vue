@@ -75,13 +75,13 @@ const imgWidth = () => {
       <div class="mt-auto">
         <hr class="text-center mb-6" style="border-color: #2d2d2d;" />
         <div class="flex justify-around">
-          <a :href="props.link" title="Accéder au dépôt." target="_blank">
+          <a :href="props.link" title="Accéder au dépôt" target="_blank">
             <FontAwesomeIcon v-if="props.link.includes('gitlab.com')" :icon="['fab', 'gitlab']" size="2x"
               class="transition-transform duration-200 hover:scale-125" />
             <FontAwesomeIcon v-else :icon="['fab', 'github']" size="2x"
               class="transition-transform duration-200 hover:scale-125" />
           </a>
-          <a v-if="props.websiteLink" :href="props.websiteLink" title="Visiter l'application." target="_blank">
+          <a v-if="props.websiteLink" :href="props.websiteLink" title="Visiter l'application" target="_blank">
             <FontAwesomeIcon :icon="['fas', 'link']" size="2x"
               class="transition-transform duration-200 hover:scale-125" />
           </a>
