@@ -53,7 +53,7 @@ const imgWidth = () => {
         <div v-else>
           <div class="py-3 flex justify-center">
             <!--Thumbnail-->
-            <img :src="getImageUrl()" :alt="props.titre" :style="{ width: imgWidth() + '%' }"
+            <img :src="getImageUrl()" :alt="props.title" :style="{ width: imgWidth() + '%' }"
               :class="'hidden md:block !rounded-xl h-fit'">
           </div>
           <div class=" md:text-xl text-lg font-semibold text-center">
