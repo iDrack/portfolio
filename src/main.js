@@ -2,7 +2,7 @@ import './assets/index.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faWrench, faCode, faBrain, faCompassDrafting, faRightLong, faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faWrench, faCode, faBrain, faCompassDrafting, faRightLong, faEnvelope, faLink, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faGitlab, faLinkedin } from '@fortawesome/free-brands-svg-icons' // Ajout de l'import
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -17,6 +17,7 @@ library.add(faGitlab)
 library.add(faLinkedin)
 library.add(faEnvelope)
 library.add(faLink)
+library.add(faArrowDown)
 
 const app = createApp(App)
 //Suppression des messages dans la console
