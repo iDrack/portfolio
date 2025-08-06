@@ -1,29 +1,3 @@
-# portfolio-2024
+# portfolio
 
-check it -> [thomasdignoire.fr/](https://www.thomasdignoire.fr/)
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Portfolio d'applications web et mobile réalisé en Vue.js avec Tailwind.
