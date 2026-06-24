@@ -17,7 +17,8 @@ import TextType from './TextAnimations/TextType/TextType.vue';
         <ShinyText text="Bonjour 👋 je suis Thomas Dignoire." :disabled="false" :speed="2.5" />
       </h1>
       <h1 class="text-center font-bold pb-4">
-        <TextType class="text-center font-bold md:text-5xl text-3xl whitespace-normal break-words pb-4" :text="[`Concepteur Développeur d'Applications`,
+        <TextType class="text-center font-bold md:text-5xl text-3xl whitespace-normal break-words pb-4 h-[80px]" :text="[
+          `Concepteur Développeur d'Applications`,
           `Développeur Fullstack`,
           `Développeur Mobile`,]" :variableSpeed="{ min: 60, max: 120 }" :typingSpeed="75" :pauseDuration="1500"
           :showCursor="true" cursorCharacter="_" />
