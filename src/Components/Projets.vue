@@ -28,7 +28,7 @@ import ProjectItem from './ProjectItem/ProjectItem.vue';
       description="Votre bibliothèque de recettes à self-host." content="Un site de recette utilisant NuxtUI et MongoDB.
       Parfait si vous voulez moderniser votre livre de recette et le partager avec votre famille et vos amis."
       :technos="['Nuxt', 'Tailwind', 'Mongodb']" image="cookoff.webp"
-      link="https://github.com/iDrack/cookoff"
+      link="https://github.com/iDrack/cook-off"
       class="h-full flex flex-col" />
   </div>
   <div>
