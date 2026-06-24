@@ -15,7 +15,7 @@ const languages = ref([
 ]);
 
 const frameworks = ref([
-  "Spring", "Hibernate", "Junit", "Vue.js", "Vite",
+  "Spring", "Hibernate", "Junit", "Vue.js", "Vite", "Nuxt",
   "Pinia", "Express.js", "Flutter", "Tailwind",
 ]);
 
@@ -42,9 +42,9 @@ const concepts = ref([
 <template>
   <div class="text-slate-200">
     <div class="text-center text-slate-200 pt-6 pb-8 flex flex-row justify-center items-center">
-      <FontAwesomeIcon :icon="['fas', 'arrow-down']"/>
-        <div class="font-bold md:px-16 px-4 md:text-3xl text-xl">Compétences</div>
-      <FontAwesomeIcon :icon="['fas', 'arrow-down']"/>
+      <FontAwesomeIcon :icon="['fas', 'arrow-down']" />
+      <div class="font-bold md:px-16 px-4 md:text-3xl text-xl">Compétences</div>
+      <FontAwesomeIcon :icon="['fas', 'arrow-down']" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div class="">

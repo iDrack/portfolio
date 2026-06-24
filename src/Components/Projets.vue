@@ -24,12 +24,11 @@ import ProjectItem from './ProjectItem/ProjectItem.vue';
           Les utilisateurs peuvent créer des sondages limités dans le temps et échanger avec les autres utilisateurs participants aux même sondage."
       :technos="['Dart', 'Flutter', 'Firebase']" image="megapole.webp" img-size="50"
       link="https://gitlab.com/iDrack/megapole" class="h-full flex flex-col" />
-    <ProjectItem title="Portfolio"
-      description="Portfolio d'applications web et mobiel avec un style modrne et sobre." content="Portfolio d'applications web et mobile réalisé en Vue.js et Tailwind.
-          Vous êtes déjà dessus !
-          Qu'en pensez-vous ?"
-      :technos="['Javascript', 'Vue.js', 'tailwind']" image="portfolio.webp"
-      link="https://github.com/iDrack/portfolio" website-link="https://thomasdignoire.fr"
+        <ProjectItem title="Cook Off"
+      description="Votre bibliothèque de recettes à self-host." content="Un site de recette utilisant NuxtUI et MongoDB.
+      Parfait si vous voulez moderniser votre livre de recette et le partager avec votre famille et vos amis."
+      :technos="['Nuxt', 'Tailwind', 'Mongodb']" image="cookoff.webp"
+      link="https://github.com/iDrack/cookoff"
       class="h-full flex flex-col" />
   </div>
   <div>
